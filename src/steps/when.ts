@@ -5,10 +5,10 @@ import { screenShotService } from "../support/action/screenShot";
 import { checkIfElementExists } from "../support/lib/checkIfElementExists";
 
 When(
-  /^I (click|doubleclick) on the (link|button|element) "([^"]*)?"$/,
+  /^I (click) on the (link|button|element) "([^"]*)?"$/,
   function (action: string, type: string, selector: string): void {
     const selector2 = type === "link" ? `=${selector}` : selector;
-    const method = action === "click" ? "click" : "doubleClick";
+    const method = "click";
 
     checkIfElementExists(selector2);
 
@@ -29,7 +29,7 @@ When(
 When(
   /^Page gets "([^"]*)?" capture "([^"]*)?" and save image as "([^"]*)?"$/,
   function (
-    eventType: "loaded" | "unloaded",
+    eventType: "loaded",
     screenShotType: string,
     fileName: string
   ): void {

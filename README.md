@@ -81,3 +81,13 @@ npm run report
 - Webdriver IO will run all test in **parallel** in chrome due to available nodes
 - Webdriver IO will run sequentially in Firefox because of single instance/node.
 - We can use **kubernetes to provision the nodes** in selenium-hub based on demand ( Work in Progess)
+
+#### Local dashboard urls
+
+- [selenium-hub](https://share.anysnap.app/f8zhG3avvtnn) : `http://localhost:4444/grid/console`
+
+#### Screenshots:
+
+- [Execution of UI test case results](https://share.anysnap.app/fZGB31iWuuDQ)
+- [Selenium Grid Dashboard](https://share.anysnap.app/fCfzXv5iYeBS)
+- [Simultaenous nodes of chrome running parallelly](https://share.anysnap.app/fXy17mRrZGLN)
