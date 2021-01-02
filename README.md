@@ -1,4 +1,4 @@
-# Volvo web automation assignment
+# Web automation assignment ( Docker + Selenium Grid + Cucumber + Javascript + WebdriverIO )
 
 #### Requirements
 
