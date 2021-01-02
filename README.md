@@ -77,7 +77,7 @@ npm run report
 
 - WebdriverIO can run parallel test/features in case of multiple nodes availability with selenium hub.
   so We have configured `chrome=3` and `firefox=1` instance/node.
-- When run `docker-compose up -d --scale chrome=3` or `npm run selenium`, we are spinnign three chrome instaces.
-- Webdriver IO will run all test in parallel in chrome
-- Webdriver IO will run sequentially in Firefox because of single instance.
+- When run `docker-compose up -d --scale chrome=3` or `npm run selenium`, we are spinning three chrome instances.
+- Webdriver IO will run all test in **parallel** in chrome due to available nodes
+- Webdriver IO will run sequentially in Firefox because of single instance/node.
 - We can use **kubernetes to provision the nodes** in selenium-hub based on demand ( Work in Progess)
