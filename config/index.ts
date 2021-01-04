@@ -10,7 +10,8 @@ export const config = {
   framework: "cucumber",
   maxInstances: 10,
 
-  // Capabilities configuration for Google Chrome & FF
+  // Capabilities configuration for Google Chrome & Firefox.
+
   capabilities: [
     {
       maxInstances: 3, // We are creating 3 instance to demonstrate parallel testing.
