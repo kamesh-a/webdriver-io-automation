@@ -12,6 +12,7 @@ class ScreenShotService {
 
   saveScreen(fileName: string, options = {}): void {
     const result = browser.saveScreen(fileName, options);
+    console.log(`screenshot result : `, result);
   }
 
   saveTabable(fileName: string, options = {}): void {
